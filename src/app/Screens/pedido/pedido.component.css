@@ -1,0 +1,46 @@
+.logo{
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inteiro{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10% 0 10%;
+  font-family: 'Arvo', serif;
+}
+.box{
+  padding-top: 10px;
+}
+
+.botao_enviar{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.borda{
+  border: 1px black solid;
+    border-radius: 6.5px;
+    width: 40px;
+    height: 40px;
+    margin-right: 13px;
+}
+
+a{
+  color: black;
+}
+
+.matIcon{
+  font-size: 28px;
+    margin: 6px 0 0px 6px;
+}
+
+::ng-deep .mat-form-field-infix {
+  border-top: none;
+
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 10px 0 5px 0;
+}

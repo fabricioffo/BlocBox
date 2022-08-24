@@ -1,0 +1,32 @@
+<form class="container">
+  <div style="margin-top: 33px; height: 313px;">
+    <img src="../assets/img/BlocBox_Logo_Colorida_maior.png" alt="Logo">
+  </div>
+  <div style="font-size: 23px;">
+    <p class="BV">Seja Bem-Vindo</p>
+  </div>
+  <div style="width: 73%; display: grid;">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" placeholder="pat@example.com" >
+    </mat-form-field>
+  </div>
+  <div style="width: 74%; display: grid;">
+    <mat-form-field appearance="outline">
+      <mat-label>Enter your password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+  <div class="botaoLogin">
+    <button mat-raised-button color="primary" (click)=changePageInicia()>Logar</button>
+  </div>
+  <div class="botaoLogin">
+    <button mat-raised-button color="primary" (click)=changePage() >Nova Conta</button>
+  </div>
+  <div>
+    <p>esqueceu a senha?</p>
+  </div>
+</form>

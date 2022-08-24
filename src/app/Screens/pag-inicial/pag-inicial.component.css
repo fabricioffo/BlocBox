@@ -1,0 +1,29 @@
+.logo{
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inteiro{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10% 0 10%;
+  font-family: 'Arvo', serif;
+}
+.box{
+  padding-top: 10px;
+}
+
+.botao_enviar{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+::ng-deep .mat-form-field-infix {
+  border-top: none;
+
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 10px 0 5px 0;
+}
